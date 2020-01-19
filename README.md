@@ -1,21 +1,19 @@
 # myshell
-toy shell design to shell
+toy shell design to confirm POSIX (IEEE Std 1003.1-2017) Shell and Utilities
+
+Detail description could be found from [OpenGroup: Shell & Utilities](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/contents.html)
 
 ## Platform
-Support Linux only but may extend to FreeBSD to support MacOS environment in the future
+POSIX
 
 ## Software stack
-Only GNU software stack will be use because it itself has already provided many handy libraries and C extensions.
+GNU software stack will be use because it itself has already provided many handy libraries and C extensions.
 
 ## Road map
-1. hook up with termios and support speacial characters like `VKILL`, `VSUSP`, etc.
+1. sh utility with single command_string except interactive
 
-1. Interactive shell will be supported first. This would including the basic command executing 
+1. frequently used utilities like cd, pwd, chmod, etc. 
 
-1. Run the commond in background
+1. pipe, redirection, background, etc. which require more than one process exec
 
-1. Short options, long options, scripting
-
-1. Environmnet variable overwriting, pipe, redirection, etc. 
-
-1. Tab autocomplete, arrow keys, history and other fancy stuff
+1. interactive
